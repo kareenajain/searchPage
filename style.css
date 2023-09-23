@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&family=Poppins:wght@200;300;400;500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.main {
+    background-image: url(./images/bg-image.jpg);
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+/* .content {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 70%;
+    left: 50%;
+} */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content h1{
+    font-size: 5rem;
+    padding: 11rem 0 3rem;
+    color: #731e1e;
+}
+.search-box {
+    width: 30rem;
+}
+.search-icon svg {
+    height: 28px;
+    margin-top: 2px;
+    fill: #a73636;
+}
+
+.category-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.category {
+    padding: 2rem 0;
+}   
+.suggestionList {
+    /* text-decoration: none; */
+    list-style-type: none;
+    padding: 0;
+    padding-right: 3rem;
+    opacity: 0.9;
+    
+
+}
+.scrollbar {
+    overflow-y:scroll;
+    overflow-x: hidden;
+    height: 105px;
+}
+.listContainer {
+    /* margin-right: 3rem; */
+    background-color: white;
+    width: 30rem;
+    border-radius: 5px;
+}
+li {
+    padding: 3px 11px;
+    width: 30rem;
+
+}
+.dropdown li:hover {
+    background-color: rgb(241, 100, 81);
+    color: white;
+}
+
+
+.form-control {
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 1200px) {
+    .category-items {
+        gap: 2rem;
+    }
+    .content h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .category-items {
+        gap: 1rem;
+    }
+    .content h1 {
+        font-size: 3rem;
+    }
+    .search-box {
+        width: 27rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-items {
+        gap: 1rem;
+    }
+    .content h1 {
+        font-size: 2.8rem;
+        padding: 11rem 0 1rem;
+    }
+    .search-box {
+        width: 27rem;
+    }
+    .search-box {
+        width: 20rem;
+    }
+    .search-area {
+        justify-content: center;
+    }
+   
+}
