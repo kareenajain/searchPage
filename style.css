@@ -69,9 +69,15 @@ li {
     width: 30rem;
 
 }
-.dropdown li:hover {
+/* .dropdown li:hover {
     background-color: rgb(241, 100, 81);
     color: white;
+} */
+
+
+.highlighted {
+    background-color: rgb(250, 225, 221);
+    color: black
 }
 
 
